@@ -37,7 +37,7 @@ export default class Logger implements ILogger {
       // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
       this.getLevelWithName(key)!,
       value,
-    ])
+    ]),
   )
 
   private _tag: string
@@ -154,7 +154,7 @@ export default class Logger implements ILogger {
   logWithTagAtLevel(
     level: LogLevel | string,
     tag: string,
-    message: string
+    message: string,
   ): void {
     const logLevel =
       typeof level === 'string'
@@ -174,7 +174,7 @@ export default class Logger implements ILogger {
     if (isNative) {
       if (value && typeof value === 'object') {
         this.info(
-          `${value.constructor.name}: ${JSON.stringify(value, null, 2)}`
+          `${value.constructor.name}: ${JSON.stringify(value, null, 2)}`,
         )
       } else {
         this.info(JSON.stringify(value))
@@ -277,7 +277,7 @@ export default class Logger implements ILogger {
 
     if (!this.timers.has(resolvedLabel)) {
       this.warn(
-        `timer '${Logger.timeLabelToString(resolvedLabel)}' does not exist`
+        `timer '${Logger.timeLabelToString(resolvedLabel)}' does not exist`,
       )
       return
     }
@@ -289,8 +289,8 @@ export default class Logger implements ILogger {
       const duration = endTime - startTime
       this.info(
         `${Logger.timeLabelToString(
-          resolvedLabel
-        )}: ${Logger.formatMilliseconds(duration)}`
+          resolvedLabel,
+        )}: ${Logger.formatMilliseconds(duration)}`,
       )
     }
   }

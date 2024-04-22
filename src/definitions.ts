@@ -22,7 +22,7 @@ export interface Options {
  */
 export type LoggerWithTagConstructor = new (
   tag: string,
-  options?: Options
+  options?: Options,
 ) => ILogger
 
 /**
@@ -110,7 +110,7 @@ export interface ILogger {
   logWithTagAtLevel: (
     level: LogLevel | string,
     tag: string,
-    message: string
+    message: string,
   ) => void
 
   /**

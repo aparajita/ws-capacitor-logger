@@ -1,6 +1,7 @@
 import { registerPlugin } from '@capacitor/core'
 import type { LoggerBridgePlugin } from './definitions'
 import { setLoggerBridge } from './global'
+// eslint-disable-next-line @typescript-eslint/naming-convention
 import Logger from './logger'
 
 async function loader(): Promise<unknown> {
