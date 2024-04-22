@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [5.0.0](https://github.com/aparajita/capacitor-logger/compare/v4.0.1...v5.0.0) (2024-04-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* upgrade to Capacitor 6, update deps
+
+### Features
+
+* upgrade to Capacitor 6, update deps ([fcffabd](https://github.com/aparajita/capacitor-logger/commit/fcffabd83ec597aa9f1f3e03a98634e11de3cdfd))
+
+
+### Maintenance
+
+* remove unused file refs ([f81d046](https://github.com/aparajita/capacitor-logger/commit/f81d046ed9f97a686b3a3d3a3ac4854ec368b707))
+
 ## [4.0.1](https://github.com/aparajita/capacitor-logger/compare/v4.0.0...v4.0.1) (2023-06-15)
 
 
